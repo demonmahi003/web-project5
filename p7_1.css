@@ -1,0 +1,242 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Inter', sans-serif;
+    background: #ece6fb;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    min-height: 100vh;
+    background-image: url(warpper.png);
+  }
+  
+  .container {
+    display: flex;
+    max-width: 1000px;
+    margin: 10px auto;
+    background: white;
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  }
+  
+  .login-section {
+    flex: 1;
+    padding: 40px;
+  }
+  
+  .login-section h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+    font-weight: 700;
+  }
+  
+  .subtext {
+    color: #888;
+    font-size: 14px;
+    margin-bottom: 30px;
+  }
+  
+  .input-group {
+    margin-bottom: 20px;
+  }
+  
+  .input-group label {
+    display: block;
+    font-size: 14px;
+    color: #444;
+    margin-bottom: 5px;
+  }
+  
+  .input-group input {
+    width: 100%;
+    padding: 12px 15px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    font-size: 14px;
+  }
+  
+  .login-btn {
+    width: 100px;
+    padding: 12px;
+    background-image: linear-gradient(to bottom right,#6e58ff,#835ef2);
+    color: white;
+    font-weight: bold;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    margin-bottom: 10px;
+    transition: background 0.3s ease;
+  }
+  .butcont{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .login-btn:hover {
+    background-image: linear-gradient(to bottom right,#6e58ff,#835ef2);
+    transform: translateY(-0.1rem);
+    transition: 0.5s;
+  }
+  
+  .or {
+    text-align: center;
+    margin: 15px 0;
+    font-weight: 600;
+  }
+  
+  .social-login {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    background: #f0f0f0;
+    padding: 10px 15px;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    cursor: pointer;
+    transition: background 0.2s ease;
+  }
+  
+  .social-login:hover {
+    background: #e2e2e2;
+  }
+  
+  .social-login img {
+    width: 24px;
+  }
+  
+  .image-section {
+    flex: 1;
+    background: linear-gradient(135deg, #835ef2, #6e58ff);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 30px;
+    background-image: url(loginpage.png);
+    background-size: cover;
+    min-width: 300px;
+  }
+  
+  
+  footer {
+    margin: 20px auto 0;
+    max-width: 1000px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 50px;
+    font-size: 14px;
+    padding: 10px 20px;
+    color: #333;
+  }
+  
+  footer .credit {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+  
+  footer .avatar {
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+  }
+  
+  footer .email {
+    font-weight: 500;
+  }
+  
+  a{
+    text-decoration: none;
+  }
+  /* Responsive Design */
+@media (max-width: 768px) {
+  .container {
+    flex-direction: column;
+    margin: 20px;
+    box-shadow: none;
+    border-radius: 10px;
+  }
+
+  .image-section {
+    background-position: center;
+    border-radius: 10px 10px 0 0;
+    background-image: none;
+  }
+
+  .login-section {
+    padding: 20px;
+  }
+
+  footer {
+    flex-direction: column;
+    gap: 10px;
+    font-size: 13px;
+    text-align: center;
+    padding: 15px;
+  }
+
+  footer .credit {
+    flex-direction: column;
+    gap: 5px;
+  }
+
+  footer .avatar {
+    width: 30px;
+    height: 30px;
+  }
+}
+
+@media (max-width: 480px) {
+  .input-group input {
+    padding: 10px;
+    font-size: 13px;
+  }
+
+  .login-btn {
+    padding: 10px;
+    font-size: 14px;
+  }
+
+  .social-login {
+    padding: 8px 10px;
+    font-size: 13px;
+  }
+
+  .login-section h2 {
+    font-size: 20px;
+  }
+
+  .subtext {
+    font-size: 13px;
+  }
+
+  .or {
+    font-size: 14px;
+  }
+}
+
+  /* WebKit scrollbar styling */
+  ::-webkit-scrollbar {
+    width: 12px;
+  }
+
+  ::-webkit-scrollbar-track {
+    background: #2e294e; /* dark violet */
+    border-radius: 10px;
+  }
+
+  ::-webkit-scrollbar-thumb {
+    background: linear-gradient(180deg, #a18cd1, #fbc2eb); /* soft purple-pink gradient */
+    border-radius: 10px;
+    border: 2px solid #2e294e;
+  }
+
+  ::-webkit-scrollbar-thumb:hover {
+    background: linear-gradient(180deg, #c471f5, #fa71cd);
+  }
